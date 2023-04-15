@@ -23,3 +23,9 @@ alter table Customer
 Add  Country varchar (100),
 Salary  varchar (100),
 Pincode varchar (100);
+--Update customer details based on customer name.
+update Customer set Country='India',Salary='3000',Pincode='415540' Where CustomerName = 'Rutuja'
+update Customer set Country='USA',Salary='30000',Pincode='415541' Where CustomerName = 'Riya'
+update Customer set Country='Japan',Salary='400000',Pincode='4155780' Where CustomerName = 'Raj'
+update Customer set Country='London',Salary='70000',Pincode='415787' Where CustomerName = 'Dev'
+update Customer set Country='Pakistan',Salary='80000',Pincode='987654' Where CustomerName = 'Sam'
