@@ -43,4 +43,19 @@ select Min (Salary) as Minimum_Salary from Customer
 select Sum(Salary) as Total_Salary_Of from Customer
 --Average salary
 SELECT AVG(Salary) FROM Customer;
+--Create order table with columns order id, product name, quantity and rating.
+Create Table ordertable(
+OrderID int identity(1,1)Primary key,
+ProductName varchar(100),
+quantity varchar (200),
+rating varchar (20)
+);
+insert into ordertable values
+('Acer','30','1' ),
+('Dell', '100','5'),
+('hp', '90','4'),
+('Asus', '80','2'),
+('Lenovo','50','3')
+select * from ordertable
+select * from Customer
 
