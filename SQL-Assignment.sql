@@ -18,3 +18,8 @@ values ('Rutuja','Satara','9011973870'),
 ('Riya','Nagpur','985086767'),
 ('Sam','Nashik','8850897654');
 select * from Customer
+--Add new columns like Country, Salary and Pincode and update values.
+alter table Customer
+Add  Country varchar (100),
+Salary  varchar (100),
+Pincode varchar (100);
