@@ -58,4 +58,10 @@ insert into ordertable values
 ('Lenovo','50','3')
 select * from ordertable
 select * from Customer
+--Fetch data from both tables.
+
+SELECT Customer.CustomerID, Customer.CustomerName, ordertable.ProductName
+FROM Customer
+INNER JOIN ordertable
+ON Customer.CustomerID = ordertable.OrderID;
 
