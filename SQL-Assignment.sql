@@ -29,3 +29,8 @@ update Customer set Country='USA',Salary='30000',Pincode='415541' Where Customer
 update Customer set Country='Japan',Salary='400000',Pincode='4155780' Where CustomerName = 'Raj'
 update Customer set Country='London',Salary='70000',Pincode='415787' Where CustomerName = 'Dev'
 update Customer set Country='Pakistan',Salary='80000',Pincode='987654' Where CustomerName = 'Sam'
+--Show number of customers in each country.
+select * from Customer where Country='India'
+select * from Customer where Country='USA'
+SELECT COUNT(*) 
+FROM Customer Where Country='India'
