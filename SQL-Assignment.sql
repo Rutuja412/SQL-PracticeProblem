@@ -34,3 +34,13 @@ select * from Customer where Country='India'
 select * from Customer where Country='USA'
 SELECT COUNT(*) 
 FROM Customer Where Country='India'
+--Show maximum salary, minimum salary, total Salary and average salary for the customers.
+--maximum salary
+select Max(Salary) as Maximum_Salary from Customer
+--minimum salary
+select Min (Salary) as Minimum_Salary from Customer
+--total Salary
+select Sum(Salary) as Total_Salary_Of from Customer
+--Average salary
+SELECT AVG(Salary) FROM Customer;
+
